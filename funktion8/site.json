@@ -1,0 +1,21 @@
+{
+  "id": "funktion8",
+  "name": "Funktion8",
+  "status": "prepared",
+  "primaryDomain": "funktion8.de",
+  "domains": [
+    "funktion8.de",
+    "www.funktion8.de"
+  ],
+  "path": "funktion8",
+  "language": {
+    "primary": "de",
+    "secondary": [
+      "en"
+    ]
+  },
+  "notes": [
+    "Legal pages contain placeholders until operator details are finalized.",
+    "This site is isolated from future sites by keeping all production files below its own top-level folder."
+  ]
+}
