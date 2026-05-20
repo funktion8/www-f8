@@ -26,6 +26,7 @@ grep -q 'Organisation as Code' en/index.html
 grep -q -- '--f8-ink' styleguide/tokens.css
 grep -q 'verbindliche CI-Quelle' styleguide/README.md
 grep -q '@import url("../styleguide/tokens.css")' assets/site.css
+test ! -e assets/nac-control-plane.png
 ! grep -q 'nac-control-plane' assets/site.css
 ! grep -R '\bNoC\b' index.html en/index.html README.md styleguide/README.md assets/site.css
 ! grep -R 'github.com/ofunk/NaC\|github.com/ofunk' index.html en/index.html
