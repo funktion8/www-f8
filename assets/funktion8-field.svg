@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 1200" role="img" aria-label="Abstrakte Funktion8 Bildfläche aus Prozesslinien, Feldern und Markenflächen">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#fbfcfa"/>
+      <stop offset="0.52" stop-color="#eef5f1"/>
+      <stop offset="1" stop-color="#dfeee9"/>
+    </linearGradient>
+    <linearGradient id="fade" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#f8faf7"/>
+      <stop offset="0.45" stop-color="#f8faf7" stop-opacity="0.88"/>
+      <stop offset="1" stop-color="#f8faf7" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="8"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncA type="table" tableValues="0 0.045"/>
+      </feComponentTransfer>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="18" dy="22" stdDeviation="18" flood-color="#1e3026" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <rect width="1800" height="1200" fill="url(#bg)"/>
+  <rect width="1800" height="1200" filter="url(#grain)" opacity="0.7"/>
+
+  <ellipse cx="1340" cy="255" rx="470" ry="540" fill="#006b5a" opacity="0.13"/>
+  <ellipse cx="1330" cy="820" rx="660" ry="430" fill="#1e3026" opacity="0.08"/>
+  <ellipse cx="1640" cy="850" rx="390" ry="260" fill="#f3be41" opacity="0.18"/>
+
+  <g fill="none" stroke-linecap="round">
+    <path d="M720 250 C920 230 1090 260 1260 230 S1485 210 1540 205" stroke="#007a66" stroke-width="6" opacity="0.7"/>
+    <path d="M720 370 C910 362 1090 390 1255 376 S1450 385 1540 397" stroke="#007a66" stroke-width="5" opacity="0.62"/>
+    <path d="M720 502 C920 494 1060 535 1238 510 S1410 505 1540 555" stroke="#007a66" stroke-width="6" opacity="0.62"/>
+    <path d="M720 645 C900 632 1088 610 1275 620 S1460 590 1540 594" stroke="#007a66" stroke-width="6" opacity="0.62"/>
+    <path d="M720 780 C930 802 1070 770 1250 790 S1440 812 1540 795" stroke="#007a66" stroke-width="5" opacity="0.58"/>
+    <path d="M720 910 C930 925 1100 905 1260 918 S1460 930 1540 925" stroke="#007a66" stroke-width="6" opacity="0.62"/>
+
+    <path d="M840 190 C815 430 800 650 780 960" stroke="#22556e" stroke-width="5" opacity="0.4"/>
+    <path d="M1040 185 C1020 435 990 690 966 970" stroke="#22556e" stroke-width="5" opacity="0.34"/>
+    <path d="M1230 190 C1200 430 1198 680 1174 980" stroke="#22556e" stroke-width="5" opacity="0.35"/>
+    <path d="M1420 185 C1438 450 1450 705 1486 980" stroke="#22556e" stroke-width="5" opacity="0.38"/>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="870" y="220" width="250" height="145" fill="#ffffff" opacity="0.86"/>
+    <rect x="1180" y="180" width="330" height="165" fill="#1e3026" opacity="0.92"/>
+    <rect x="790" y="430" width="240" height="170" fill="#f3be41" opacity="0.76"/>
+    <rect x="1100" y="455" width="360" height="165" fill="#ffffff" opacity="0.88"/>
+    <rect x="875" y="720" width="340" height="175" fill="#ffffff" opacity="0.86"/>
+    <rect x="1290" y="735" width="260" height="195" fill="#007a66" opacity="0.82"/>
+  </g>
+
+  <g fill="none" stroke="#1e3026" stroke-linecap="round" opacity="0.38">
+    <path d="M880 265 L940 280"/>
+    <path d="M872 330 L960 308"/>
+    <path d="M1110 300 L1204 280"/>
+    <path d="M1365 305 L1458 332"/>
+    <path d="M884 510 L984 505"/>
+    <path d="M975 530 L1058 555"/>
+    <path d="M1210 510 L1274 475"/>
+    <path d="M1335 505 L1428 520"/>
+    <path d="M905 748 L990 760"/>
+    <path d="M1010 860 L1110 832"/>
+    <path d="M1298 815 L1380 855"/>
+    <path d="M1320 880 L1440 860"/>
+  </g>
+
+  <g opacity="0.72">
+    <circle cx="742" cy="220" r="7" fill="#8bbfb7"/>
+    <circle cx="772" cy="280" r="22" fill="#1e3026" opacity="0.34"/>
+    <circle cx="830" cy="326" r="10" fill="#007a66" opacity="0.44"/>
+    <circle cx="978" cy="245" r="18" fill="#f3be41" opacity="0.38"/>
+    <circle cx="1022" cy="342" r="10" fill="#f3be41" opacity="0.46"/>
+    <circle cx="1124" cy="172" r="8" fill="#22556e" opacity="0.32"/>
+    <circle cx="1214" cy="455" r="12" fill="#1e3026" opacity="0.35"/>
+    <circle cx="1318" cy="498" r="11" fill="#8bbfb7"/>
+    <circle cx="1414" cy="214" r="10" fill="#007a66" opacity="0.48"/>
+    <circle cx="1546" cy="212" r="9" fill="#8bbfb7"/>
+    <circle cx="1558" cy="648" r="11" fill="#f3be41" opacity="0.58"/>
+    <circle cx="1476" cy="918" r="11" fill="#1e3026" opacity="0.42"/>
+    <circle cx="1260" cy="950" r="12" fill="#8bbfb7" opacity="0.7"/>
+    <circle cx="1088" cy="802" r="10" fill="#22556e" opacity="0.26"/>
+    <circle cx="945" cy="945" r="8" fill="#8bbfb7"/>
+    <circle cx="812" cy="478" r="12" fill="#007a66" opacity="0.46"/>
+    <circle cx="922" cy="558" r="10" fill="#007a66" opacity="0.36"/>
+    <circle cx="1056" cy="790" r="12" fill="#8bbfb7" opacity="0.54"/>
+    <circle cx="1210" cy="782" r="9" fill="#f3be41" opacity="0.5"/>
+    <circle cx="1320" cy="780" r="10" fill="#f3be41" opacity="0.52"/>
+    <circle cx="1518" cy="600" r="12" fill="#f3be41" opacity="0.44"/>
+  </g>
+
+  <g>
+    <rect x="1240" y="258" width="105" height="105" rx="8" fill="#ffcd49"/>
+    <text x="1292" y="325" fill="#1e3026" font-family="Arial, Helvetica, sans-serif" font-size="48" font-weight="800" text-anchor="middle">F8</text>
+  </g>
+
+  <rect width="1800" height="1200" fill="url(#fade)"/>
+</svg>
