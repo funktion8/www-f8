@@ -7,7 +7,7 @@
     "funktion8.de",
     "www.funktion8.de"
   ],
-  "path": "funktion8",
+  "path": ".",
   "language": {
     "primary": "de",
     "secondary": [
@@ -16,6 +16,6 @@
   },
   "notes": [
     "Legal pages contain placeholders until operator details are finalized.",
-    "This site is isolated from future sites by keeping all production files below its own top-level folder."
+    "This repository is deployed as a single GitHub Pages site from the repository root."
   ]
 }
