@@ -42,8 +42,14 @@ abgeleitete Vertical-Seiten.
 - Die englische Orientierung steht in [en/index.html](en/index.html).
 - Rechtliche Platzhalter stehen in [impressum.html](impressum.html) und
   [datenschutz.html](datenschutz.html).
+- Kontakt, Transparenz, Gemeinnützigkeit und Förderung stehen in
+  [kontakt.html](kontakt.html), [transparenz.html](transparenz.html),
+  [gemeinnuetzigkeit.html](gemeinnuetzigkeit.html) und
+  [foerderung.html](foerderung.html).
+- Englische Legal-Seiten stehen in [en/imprint.html](en/imprint.html) und
+  [en/privacy.html](en/privacy.html).
 - Site-spezifische Assets liegen unter [assets/](assets).
 - Gemeinsame CI-Vorgaben liegen unter [styleguide/](styleguide).
 
-Vor produktivem Go-live müssen Impressum und Datenschutz final geprüft und
-mit echten Betreiberangaben vervollständigt werden.
+Vor produktiven Änderungen an Rechtsseiten sollten Impressum, Datenschutz und
+Statusangaben rechtlich geprüft werden.
