@@ -1,0 +1,29 @@
+:root {
+  --f8-ink: #1f2b24;
+  --f8-muted: #56645d;
+  --f8-paper: #f5f7f4;
+  --f8-surface: #ffffff;
+  --f8-line: #d9e0dc;
+  --f8-green: #006b5a;
+  --f8-green-dark: #06483f;
+  --f8-gold: #f2c14e;
+  --f8-copper: #b4511d;
+  --f8-blue: #4962a3;
+  --f8-shadow: 0 18px 50px rgba(31, 43, 36, 0.13);
+  --f8-radius: 8px;
+  --f8-font-sans: Arial, Helvetica, sans-serif;
+  --f8-page-gutter: clamp(1rem, 5vw, 5rem);
+  --f8-section-y: clamp(3rem, 8vw, 6rem);
+
+  --ink: var(--f8-ink);
+  --muted: var(--f8-muted);
+  --paper: var(--f8-paper);
+  --surface: var(--f8-surface);
+  --line: var(--f8-line);
+  --green: var(--f8-green);
+  --green-dark: var(--f8-green-dark);
+  --gold: var(--f8-gold);
+  --copper: var(--f8-copper);
+  --blue: var(--f8-blue);
+  --shadow: var(--f8-shadow);
+}

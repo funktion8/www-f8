@@ -1,16 +1,4 @@
-:root {
-  --ink: #1f2b24;
-  --muted: #56645d;
-  --paper: #f5f7f4;
-  --surface: #ffffff;
-  --line: #d9e0dc;
-  --green: #006b5a;
-  --green-dark: #06483f;
-  --gold: #f2c14e;
-  --copper: #b4511d;
-  --blue: #4962a3;
-  --shadow: 0 18px 50px rgba(31, 43, 36, 0.13);
-}
+@import url("../styleguide/tokens.css");
 
 * {
   box-sizing: border-box;
@@ -24,7 +12,7 @@ body {
   margin: 0;
   background: var(--paper);
   color: var(--ink);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--f8-font-sans);
   line-height: 1.55;
 }
 
@@ -134,14 +122,20 @@ a {
 
 .hero {
   align-items: center;
-  background:
-    linear-gradient(90deg, rgba(245, 247, 244, 0.97) 0%, rgba(245, 247, 244, 0.86) 50%, rgba(245, 247, 244, 0.44) 100%),
-    url("nac-control-plane.png");
-  background-position: center;
-  background-size: cover;
+  background: linear-gradient(135deg, #f8faf7 0%, var(--paper) 56%, #e8f0ec 100%);
   display: flex;
-  min-height: 72vh;
-  padding: clamp(4rem, 10vw, 8rem) clamp(1rem, 5vw, 5rem);
+  min-height: 74vh;
+  padding: clamp(4rem, 10vw, 8rem) var(--f8-page-gutter);
+}
+
+.hero-shell {
+  align-items: center;
+  display: grid;
+  gap: clamp(2rem, 6vw, 6rem);
+  grid-template-columns: minmax(0, 0.95fr) minmax(320px, 0.8fr);
+  margin: 0 auto;
+  max-width: 1240px;
+  width: 100%;
 }
 
 .hero-content {
@@ -249,11 +243,81 @@ h3 {
   margin: 0;
 }
 
+.hero-visual {
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  display: grid;
+  gap: 1rem;
+  padding: clamp(1rem, 3vw, 1.5rem);
+}
+
+.system-row {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.vertical-row {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.system-node {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  min-height: 112px;
+  padding: 1rem;
+}
+
+.system-node strong,
+.system-node small {
+  display: block;
+}
+
+.system-node small {
+  color: var(--muted);
+  margin-top: 0.35rem;
+}
+
+.root-node {
+  background: var(--ink);
+  color: var(--surface);
+  min-height: 148px;
+}
+
+.root-node span {
+  align-items: center;
+  background: var(--gold);
+  border-radius: 8px;
+  color: var(--ink);
+  display: inline-flex;
+  font-weight: 700;
+  height: 44px;
+  justify-content: center;
+  margin-bottom: 1.4rem;
+  width: 44px;
+}
+
+.root-node small {
+  color: #dce5df;
+}
+
+.system-node.active {
+  border-color: var(--green);
+  box-shadow: inset 0 0 0 2px rgba(0, 107, 90, 0.12);
+}
+
+.muted-node {
+  background: #f6f8f6;
+}
+
 .band,
 .section,
 .cta-band,
 .legal-page {
-  padding: clamp(3rem, 8vw, 6rem) clamp(1rem, 5vw, 5rem);
+  padding: var(--f8-section-y) var(--f8-page-gutter);
 }
 
 .band {
@@ -283,7 +347,8 @@ h3 {
 
 .card-grid,
 .artifact-layout,
-.governance-list {
+.governance-list,
+.vertical-layout {
   display: grid;
   gap: 1rem;
   margin: 0 auto;
@@ -297,6 +362,7 @@ h3 {
 .card,
 .artifact-layout article,
 .governance-list div,
+.vertical-layout article,
 .legal-box {
   background: var(--surface);
   border: 1px solid var(--line);
@@ -318,6 +384,7 @@ h3 {
 .card p,
 .artifact-layout p,
 .governance-list p,
+.vertical-layout p,
 .legal-page p {
   color: var(--muted);
   margin: 0;
@@ -331,8 +398,24 @@ h3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.vertical-layout {
+  grid-template-columns: minmax(0, 1.2fr) repeat(2, minmax(0, 0.9fr));
+}
+
 .artifact-layout article {
   border-left: 6px solid var(--gold);
+}
+
+.vertical-layout article {
+  border-top: 6px solid var(--green);
+}
+
+.vertical-layout article:nth-child(2) {
+  border-top-color: var(--gold);
+}
+
+.vertical-layout article:nth-child(3) {
+  border-top-color: var(--blue);
 }
 
 .artifact-layout article:nth-child(2) {
@@ -450,11 +533,11 @@ h3 {
   }
 
   .hero {
-    background:
-      linear-gradient(180deg, rgba(245, 247, 244, 0.98) 0%, rgba(245, 247, 244, 0.89) 62%, rgba(245, 247, 244, 0.66) 100%),
-      url("nac-control-plane.png");
-    background-position: center;
-    min-height: 70vh;
+    min-height: auto;
+  }
+
+  .hero-shell {
+    grid-template-columns: 1fr;
   }
 
   h1 {
@@ -469,7 +552,10 @@ h3 {
   .content-grid.two,
   .card-grid,
   .governance-list,
-  .artifact-layout {
+  .artifact-layout,
+  .vertical-layout,
+  .system-row,
+  .vertical-row {
     grid-template-columns: 1fr;
   }
 

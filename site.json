@@ -1,7 +1,7 @@
 {
   "id": "funktion8",
   "name": "Funktion8",
-  "status": "prepared",
+  "status": "foundation-in-formation",
   "primaryDomain": "funktion8.de",
   "domains": [
     "funktion8.de",
@@ -14,8 +14,16 @@
       "en"
     ]
   },
+  "mission": "Organisation as Code as a non-profit open-source foundation for recurring SME business processes.",
+  "firstVertical": "notariat8.de",
+  "styleguide": {
+    "path": "styleguide",
+    "tokens": "styleguide/tokens.css",
+    "role": "canonical CI source for Funktion8 vertical sites"
+  },
   "notes": [
     "Legal pages contain placeholders until operator details are finalized.",
-    "This repository is deployed as a single GitHub Pages site from the repository root."
+    "This repository is deployed as a single GitHub Pages site from the repository root.",
+    "Funktion8 is intended as a non-profit structure in formation."
   ]
 }
