@@ -91,10 +91,5 @@
     <circle cx="1518" cy="600" r="12" fill="#f3be41" opacity="0.44"/>
   </g>
 
-  <g>
-    <rect x="1240" y="258" width="105" height="105" rx="8" fill="#ffcd49"/>
-    <text x="1292" y="325" fill="#1e3026" font-family="Arial, Helvetica, sans-serif" font-size="48" font-weight="800" text-anchor="middle">F8</text>
-  </g>
-
   <rect width="1800" height="1200" fill="url(#fade)"/>
 </svg>
